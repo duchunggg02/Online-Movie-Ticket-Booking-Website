@@ -1,0 +1,98 @@
+/* CSS */
+
+.seat-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    margin-top: 20px; /* Thêm margin top */
+  }
+
+
+
+.seat-item {
+    
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+
+.seat-item.disabled {
+    background-color: #ddd;
+    cursor: not-allowed;
+}
+
+.seat-item input[type="checkbox"] {
+    display: none;
+}
+
+.seat-item input[type="checkbox"] + label {
+    position: relative;
+    cursor: pointer;
+}
+
+.seat-item input[type="checkbox"] + label::before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    border: 2px solid #007bff;
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.seat-item input[type="checkbox"]:checked + label::before {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+
+/* CSS */
+.seat-item.selected {
+    background-color: #007bff;
+    color: #fff;
+    border-color: #007bff;
+}
+
+.seat-item.selected input[type="checkbox"] + label::before {
+    background-color: #fff;
+    border-color: #fff;
+    color: #007bff;
+}
+
+/* CSS */
+.screen-container {
+    background-color: #0d6efd; /* Màu nền của khung */
+    padding: 10px; /* Khoảng cách giữa vùng nền và nội dung */
+    text-align: center; /* Căn giữa nội dung trong khung */
+    border-radius: 5px; /* Bo tròn viền của khung */
+    color: white; /* Màu chữ trong khung */
+    width: 550px;
+    margin: 0 auto;
+}
+
+.screen-text {
+    margin: 0; /* Loại bỏ khoảng cách từng phía của văn bản */
+    font-weight: bold; /* Đậm văn bản */
+}
+
+
+.booking-header {
+    margin-top: 5px;
+    background-color: #000;
+    text-align: center;
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}

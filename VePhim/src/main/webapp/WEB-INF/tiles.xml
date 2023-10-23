@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache
+Software Foundation//DTD Tiles Configuration 3.0//EN"
+"http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+    <definition name="baseLayout"
+                template="/WEB-INF/layout/base.jsp">
+        <put-attribute name="title" value="" />
+        <put-attribute name="header"
+                       value="/WEB-INF/layout/header.jsp" />
+        <put-attribute name="content" value="" />
+        <put-attribute name="footer"
+                       value="/WEB-INF/layout/footer.jsp" />
+    </definition>
+    <definition name="index" extends="baseLayout">
+        <put-attribute name="title" value="Trang chủ" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/index.jsp" />
+    </definition>
+    <definition name="users" extends="baseLayout">
+        <put-attribute name="title" value="Người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/users.jsp" />
+    </definition>
+    <definition name="users.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị người dùng" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/users.addOrUpdate.jsp" />
+    </definition>
+    <definition name="roles" extends="baseLayout">
+        <put-attribute name="title" value="Vai trò" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/roles.jsp" />
+    </definition>
+    <definition name="roles.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị vai trò" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/roles.addOrUpdate.jsp" />
+    </definition>
+    <definition name="theaters" extends="baseLayout">
+        <put-attribute name="title" value="Rạp phim" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/theaters.jsp" />
+    </definition>
+    <definition name="theaters.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị rạp phim" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/theaters.addOrUpdate.jsp" />
+    </definition>
+    <definition name="movies" extends="baseLayout">
+        <put-attribute name="title" value="Phim" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/movies.jsp" />
+    </definition>
+    <definition name="movies.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị phim" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/movies.addOrUpdate.jsp" />
+    </definition>
+    <definition name="rooms" extends="baseLayout">
+        <put-attribute name="title" value="Phòng chiếu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/rooms.jsp" />
+    </definition>
+    <definition name="rooms.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị phòng chiếu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/rooms.addOrUpdate.jsp" />
+    </definition>
+    <definition name="showtimes" extends="baseLayout">
+        <put-attribute name="title" value="Suất chiếu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/showtimes.jsp" />
+    </definition>
+    <definition name="showtimes.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị suất chiếu" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/showtimes.addOrUpdate.jsp" />
+    </definition>
+    <definition name="ghe" extends="baseLayout">
+        <put-attribute name="title" value="Ghế" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/ghe.jsp" />
+    </definition>
+    <definition name="tickets" extends="baseLayout">
+        <put-attribute name="title" value="Vé" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/tickets.jsp" />
+    </definition>
+    <definition name="tickets.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị vé" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/tickets.addOrUpdate.jsp" />
+    </definition>
+    <definition name="login" extends="baseLayout">
+        <put-attribute name="title" value="Đăng nhập" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/login.jsp" />
+    </definition>
+    <definition name="feedbacks" extends="baseLayout">
+        <put-attribute name="title" value="Phản hồi" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/feedbacks.jsp" />
+    </definition>
+    <definition name="feedbacks.addOrUpdate" extends="baseLayout">
+        <put-attribute name="title" value="Quản trị phản hồi" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/feedbacks.addOrUpdate.jsp" />
+    </definition>
+    <definition name="register" extends="baseLayout">
+        <put-attribute name="title" value="Đăng ký" />
+        <put-attribute name="content"
+                       value="/WEB-INF/pages/register.jsp" />
+    </definition>
+</tiles-definitions>
