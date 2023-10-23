@@ -42,7 +42,7 @@ const TicketDetail = () => {
 
     return (
         <>
-            <h1>Ticket detail</h1>
+            <h1>Phản hồi</h1>
             <Form.Control as="textarea" aria-label="With textarea" value={noiDung} onChange={e => setNoiDung(e.target.value)} placeholder="Nhập nội dung phản hồi" />
             <Button onClick={addFeedback} className="mt-2" variant="info">Phản hồi</Button>
         </>
