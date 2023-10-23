@@ -38,9 +38,9 @@ const UserDetail = () => {
 
     return (
         <>
-            <h1>ĐÂY LÀ TRANG USER DETAIL</h1>
+             <h1>Thông tin vé</h1>
 
-            <h2>Vé</h2>
+          
             {/* <ul>
                 {ticket.map(t => {
                       let url = `/ticket/${t.veID}`;
