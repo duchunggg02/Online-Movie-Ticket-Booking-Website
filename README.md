@@ -1,1 +1,1 @@
-Đồ án môn học
+Đồ án ngành Khoa học máy tính 2023
